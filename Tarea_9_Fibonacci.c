@@ -7,7 +7,7 @@ int Fibonacci(int lim){
 		for(i=1;i<=lim;i++){
 			aux=aux+fib;
 			fib=aux-fib;
-			printf("%d        %d\n",i,fib);
+			printf("%d         %d\n",i,fib);
 		}
 	}
 	else{
@@ -26,7 +26,7 @@ int main(int argc,char **valores){
 		for(i=1;i<=lim;i++){
 			aux=aux+fib;
 			fib=aux-fib;
-			printf("%d        %d\n",i,fib);
+			printf("%d         %d\n",i,fib);
 		
 	    }
     }
