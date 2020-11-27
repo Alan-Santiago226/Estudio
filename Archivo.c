@@ -18,6 +18,7 @@ int proceso(int lim){
 }
 void Texto(int lim,FILE *fp){
 	int i;
+	fprintf(fp,"Matricula,1掳Parcial,2掳Parcial,Pia,Final\n");
 	for(i=0;i<=lim;i++){
 		fprintf(fp,"19099%d, %d, %d, %d, %.2f\n",Datos[i].mat,Datos[i].P1,Datos[i].P2,Datos[i].PIA,Datos[i].Final);
 	        printf("19099%d ,%d, %d, %d, %.2f\n",Datos[i].mat,Datos[i].P1,Datos[i].P2,Datos[i].PIA,Datos[i].Final);
@@ -30,7 +31,7 @@ int main(int argc,char**valores){
 		}
 		else{//Puse el print para la consola y el bloc de notas
 		FILE *fp;
-	    fp=fopen("C:/Users/Carolina/Downloads/Trabajos de Alan/Programaci髇/Programacion Estructurada/File/Evaluaci髇.csv","w+");
+	    fp=fopen("C:/Users/Carolina/Downloads/Trabajos de Alan/Programaci贸n/Programacion Estructurada/File/Evaluaci贸n.csv","w+");
 	    proceso(a);
 	    Texto(a,fp);
 	    fclose(fp);
@@ -41,7 +42,7 @@ int main(int argc,char**valores){
 	}
 	else{
 		FILE *fp;
-	fp=fopen("C:/Users/Carolina/Downloads/Trabajos de Alan/Programaci髇/Programacion Estructurada/File/Evaluaci髇.csv","w+");
+	fp=fopen("C:/Users/Carolina/Downloads/Trabajos de Alan/Programaci贸n/Programacion Estructurada/File/Evaluaci贸n.csv","w+");
 	proceso(10);
 	Texto(10,fp);
 	fclose(fp);
